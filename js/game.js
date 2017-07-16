@@ -4,7 +4,7 @@ function person(canvas,cobj,runs,jumps){
     this.runs=runs;
     this.jumps=jumps;
     this.x=0;
-    this.y=440;
+    this.y=450;
     this.width=300;
     this.height=160;
     this.speedx=5;

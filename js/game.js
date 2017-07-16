@@ -164,7 +164,7 @@ function game(canvas,cobj,runs,jumps,hinderImg,runA,zidanA,jumpA,dieA,progress,j
 }
 game.prototype={
     play:function(start,mask){
-        this.name=prompt("请输入用户名","lewis");
+        this.name=prompt("请输入用户名","Asiazdx");
         start.css("animation","start1 2s ease forwards");
         mask.css("animation","mask1 2s ease forwards");
         this.run();

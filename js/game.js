@@ -4,8 +4,8 @@ function person(canvas,cobj,runs,jumps){
     this.runs=runs;
     this.jumps=jumps;
     this.x=0;
-    this.y=480;
-    this.width=240;
+    this.y=440;
+    this.width=300;
     this.height=160;
     this.speedx=5;
     this.speedy=5;
@@ -27,7 +27,7 @@ function hinder(canvas,cobj,hinderImg){
     this.cobj=cobj;
     this.hinderImg=hinderImg;
     this.x=canvas.width-200;
-    this.y=530;
+    this.y=480;
     this.width=70;
     this.height=70;
     this.state=0;
@@ -157,8 +157,8 @@ function game(canvas,cobj,runs,jumps,hinderImg,runA,zidanA,jumpA,dieA,progress,j
     //move2
     this.flag=true;
     this.inita=0;
-    this.speeda=5;
-    this.r=80;
+    this.speeda=4;
+    this.r=100;
     this.y1=this.person.y;
 
 }
@@ -289,7 +289,7 @@ game.prototype={
     key:function(){
         var that=this;
         document.onkeydown=function(e){
-            if(e.keyCode==38){
+            if(e.keyCode==38){//向上键，暂停
                 if(!that.isrun){
                     for(var i in that.ts){
                         clearInterval(that.ts[i]);
@@ -309,7 +309,7 @@ game.prototype={
                     that.runA.play();
                     that.isrun=false;
                 }
-            }else if(e.keyCode==32){
+            }else if(e.keyCode==32){//空格键暂停
                 if(!that.flag){
                     return;
                 }

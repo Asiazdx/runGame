@@ -12,7 +12,8 @@ ul li{
     list-style: none;
 }
 canvas{
-    background:#000  url(../imgs/back/back.jpg) repeat-x ;
+    background:#000  url(../imgs/back/back.png) repeat-x ;
+    background-size: cover;
 }
 img{
     width:220px;
